@@ -13,7 +13,13 @@
 .navigation__name {
     font-weight: 600;
     padding-left: 35px;
-    color: brown;
+}
+
+.navigation__search {
+    border: 1px solid #D1DBD6;
+    border-radius: 1000px;
+    text-align: center;
+    padding: 8px 45px;
 }
 
 .menu__link:last-child {
