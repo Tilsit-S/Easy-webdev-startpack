@@ -1,0 +1,63 @@
+.page-header {
+  background-color: #283645;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    background-color: green;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $header-background;
+  }
+}
+
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.menu__title {
+  position: relative;
+  background: url("/img/icons/pink");
+  width: 74px;
+  height: 23px;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.menu__title::after {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 55px;
+  content: "+";
+  transform: rotate(45deg);
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.menu__item a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $text-light;
+  cursor: pointer;
+}
